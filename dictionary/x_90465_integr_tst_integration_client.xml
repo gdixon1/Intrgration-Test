@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Integration Client" max_length="40" name="x_90465_integr_tst_integration_client" type="collection">
+        <element label="Assignment Group ID" max_length="32" name="assignment_group_id" reference="sys_user_group" type="reference"/>
+        <element label="Name" max_length="256" name="name" type="string"/>
+        <element label="Password" max_length="50" name="password" type="password"/>
+        <element label="Server Address" max_length="256" name="server_address" type="string"/>
+        <element label="UserId" max_length="50" name="userid" type="string"/>
+        <index name="index">
+            <element name="assignment_group_id"/>
+        </index>
+    </element>
+</database>
